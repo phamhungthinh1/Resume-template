@@ -1,53 +1,43 @@
 import React, { Component } from 'react';
-
+import avatar from '../assets/Image/Avatar.jpg';
 class About extends Component {
   render() {
-
-    if(this.props.data){
-      var name = this.props.data.name;
-      var profilepic= "images/"+this.props.data.image;
-      var bio = this.props.data.bio;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
-      var resumeDownload = this.props.data.resumedownload;
-    }
-
     return (
       <section id="about">
-      <div className="row">
-         <div className="three columns">
-            <img className="profile-pic"  src={profilepic} alt="Tim Baker Profile Pic" />
-         </div>
-         <div className="nine columns main-col">
+        <div className="row">
+          <div className="three columns">
+            <img className="profile-pic" src={avatar} alt="avatar" />
+          </div>
+          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>{bio}</p>
+            <p>
+              My goal is to work for an encouraging and stable company that will
+              assist me in developing, improving, and obtaining the necessary
+              skills in order to become the best engineer. My career objective
+              is to become a professional front-end developer in the future.
+            </p>
             <div className="row">
-               <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-						   <span>{name}</span><br />
-						   <span>{street}<br />
-						         {city} {state}, {zip}
-                   </span><br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span>
-					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
+              <div className="columns contact-details">
+                <h2>Contact Details</h2>
+                <p className="address">
+                  <span>Phạm Hưng Thịnh</span>
+                  <br />
+                  <span>
+                    170/8 Trần Nhân Tông, Phường Vĩnh Điện, Điện Bàn, Quảng Nam
+                  </span>
+                  <br />
+                  <span>0794244189</span>
+                  <br />
+                  <a href="mailto:thinhphse62039@gmail.com">
+                    thinhphse62039@gmail.com
+                  </a>
+                </p>
+              </div>
             </div>
-         </div>
-      </div>
-
-   </section>
+          </div>
+        </div>
+      </section>
     );
   }
 }
