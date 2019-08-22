@@ -25,6 +25,10 @@ class Contact extends Component {
               </a>
             </div>
             <div style={{ display: 'flex' }}>
+              <b>Skype: &nbsp;</b>
+              <a href="skype:thinhphse62039?add">thinhphse62039</a>
+            </div>
+            <div style={{ display: 'flex' }}>
               <b>Phone number: &nbsp;</b>
               <p>0794244189</p>
             </div>
